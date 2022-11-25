@@ -1,10 +1,11 @@
-import Home from "./pages/Home";
+import { Link, Outlet } from "react-router-dom";
 import "./scss/main.scss";
 
 const App = () => {
   return (
     <div className="App">
-      <Home />
+      <h1 className="home__title">Currency Converter</h1>
+      <Outlet />
     </div>
   );
 };

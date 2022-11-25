@@ -1,0 +1,27 @@
+@import "../../scss/abstracts/variables";
+
+.currency {
+  background: linear-gradient(to right, $color-purple-3, $color-blue-2 100%);
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem;
+  min-height: 5rem;
+  border-radius: 3px;
+
+  &__text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+}
