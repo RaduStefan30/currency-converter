@@ -1,7 +1,8 @@
 import { IAction, IState } from "./types";
 
 export const initialState: IState = {
-  data: null,
+  currencies: null,
+  currencyRates: null,
   message: "",
   loading: false,
 };
@@ -13,10 +14,16 @@ export const reducer = (state: IState, action: IAction) => {
         ...state,
         loading: true,
       };
-    case "FETCHED":
+    case "FETCH_CURRENCIES":
       return {
         ...state,
-        data: action.payload.data,
+        currencies: action.payload.currencies,
+        loading: false,
+      };
+    case "FETCH_CURRENCY_RATES":
+      return {
+        ...state,
+        currencyRates: action.payload.currencyRates,
         loading: false,
       };
     case "ERROR":

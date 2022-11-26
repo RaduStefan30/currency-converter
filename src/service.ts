@@ -6,7 +6,7 @@ export const fetchAllCurencies = async () => {
   return data;
 };
 
-export const fetchCurrencyRates = async (currency: string) => {
+export const fetchCurrencyRates = async (currency: any) => {
   const response = await fetch(
     `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
   );

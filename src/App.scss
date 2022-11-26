@@ -1,0 +1,36 @@
+@import "./scss/abstracts/variables";
+
+.app {
+  &__title {
+    text-align: center;
+    margin: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+
+  &__link:visited,
+  &__link:link {
+    text-decoration: none;
+    color: $color-white-1;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    $color-purple-1 10%,
+    $color-purple-2 50%,
+    $color-blue-1 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
